@@ -22,7 +22,6 @@ Route::middleware(['auth'])->get('/dashboard', function () {
     return redirect()->route('redirect');
 })->name('dashboard');
 
-// Route admin dan user dashboard
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', function () {
         return view('admin.dashboard');
@@ -37,7 +36,7 @@ Route::middleware(['auth', 'role:user'])->group(function () {
     })->name('user.dashboard');
 });
 
-// Route profile dan lainnya
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -45,3 +44,25 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/', function () {
+    return view('vlab');
+});
+
+Route::get('/about', function () {
+    return view('about'); // resources/views/about.blade.php
+});
+
+Route::get('/produk', function () {
+    return view('produk'); // resources/views/produk.blade.php
+});
+
+Route::get('/service', function () {
+    return view('service'); // resources/views/service.blade.php
+});
+
+Route::get('/portfolio', function () {
+    return view('portofolio'); // resources/views/portfolio.blade.php
+});
+
+
