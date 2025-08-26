@@ -333,8 +333,6 @@
 
 
     <section id="portfolio" class="relative py-16">
-
-
         <div class="container mx-auto px-6 md:px-12 relative z-10">
             <!-- Header Title -->
             <div class="text-center mb-12">
@@ -444,6 +442,7 @@
             </h2>
         </div>
     </section>
+
     <section class="max-w-6xl mx-auto px-4">
         <div class="container mx-auto px-4 py-8">
             <div class="text-center mb-12">

@@ -42,7 +42,7 @@
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#portfolio" class="text-white font-medium relative group">
+                <a href="{{ url('/portfolio') }}" class="text-white font-medium relative group">
                     Portfolio
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
