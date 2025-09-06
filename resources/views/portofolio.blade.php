@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLAB.id</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="{{ asset('assets/icons/logo.jpg') }}" class="rounded-full">
 </head>
 
 <body class="bg-gray-50">
@@ -16,7 +17,8 @@
         <div class="container mx-auto flex justify-between items-center px-4 md:px-8 py-3">
             <!-- Logo -->
             <div class="flex items-center gap-3">
-                <img src="{{ asset('assets/icons/logo.jpg') }}" alt="Logo" class="w-12 h-12 rounded-full shadow-md" />
+                <img src="{{ asset('assets/icons/logo.jpg') }}" alt="Logo"
+                    class="w-12 h-12 rounded-full shadow-md" />
                 <div>
                     <h1 class="text-white font-bold text-lg md:text-xl">VLAB.id</h1>
                     <p class="text-white text-xs md:text-sm">
@@ -73,7 +75,7 @@
     </header>
 
     <!-- Section Title -->
-    <section class="text-center py-20"> <!-- Increased padding to avoid header overlap -->
+    <section class="text-center py-20" data-aos="fade-up"> <!-- Increased padding to avoid header overlap -->
         <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
             Websites That We Ever Made
         </h2>
@@ -153,8 +155,6 @@
 
         <!-- Show more -->
         <div class="text-center mt-8">
-            <a href="#" class="text-blue-600 font-semibold hover:underline">Show more</a>
-        </div>
     </section>
 
 </body>
